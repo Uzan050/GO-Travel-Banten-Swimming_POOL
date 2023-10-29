@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diagaram Chart</title>
+    <link rel="stylesheet" type="text/css" href="dbatang.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <!-- chart start -->
+    <div class="chart">
+      <p>Bulan September 2023</p>
+        <ul class="numbers">
+            <li><span>100%</span></li>
+            <li><span>50%</span></li>
+            <li><span>0%</span></li>
+        </ul>
+        <ul class="bars">
+            <li><div class="bar" data-percentage="12"></div><span>Minggu1</span></li>
+            <li><div class="bar" data-percentage="20"></div><span>Minggu2</span></li>
+            <li><div class="bar" data-percentage="28"></div><span>Minggu3</span></li>
+            <li><div class="bar" data-percentage="40"></div><span>Minggu4</span></li>
+            <li><div class="bar" data-percentage="100"></div><span>Bulan Ini</span></li>
+        </ul>
+    </div>
+    <!-- chart end -->
+
+    <script type="text/javascript">
+        $(function(){
+        $('.bars li .bar').each(function(key, bar){
+            var percentage = $(this).data('percentage');
+            $(this).animate({
+                'height' : percentage + '%'
+            },1000);
+        });
+        });
+    </script>
+</body>
+</html>

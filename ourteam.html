@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>List Name Our Team</title>
+	<link rel="stylesheet" href="ourteam.css">
+</head>
+<body>
+	<div class="dropdown">
+		<input type="text" class="text02" readonly placeholder="Select Name ...">
+		<div class="option">
+			<a href="uzan.html"><div onmouseover="show('Ahmad Fauzan')">Ahmad Fauzan</div></a>
+			<a href="yusuf.html"><div onmouseover="show('Yusuf Imam Aryadillah')">Yusuf Imam Aryadillah</div></a>
+			<a href="laila.html"><div onmouseover="show('Laila Fatmawati')">Laila Fatmawati</div></a>
+			<a href="linda.html"><div onmouseover="show('Rosmiyati Yulinda')">Rosmiyati Yulinda</div></a>
+		</div>
+	</div>
+	<script>
+		function show(a){
+			document.querySelector('.text02').value = a;
+		}
+		let dropdown = document.querySelector('.dropdown');
+		dropdown.onclick = function(){
+			dropdown.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>

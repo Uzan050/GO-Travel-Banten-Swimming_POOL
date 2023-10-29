@@ -1,0 +1,419 @@
+*{
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	font-size: 15px;
+}
+html{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+}
+.layar-dalam{
+	width: 1000px;
+	margin: auto;
+}
+
+nav{
+	z-index: 200;
+	color: #fff;
+	text-align: center;
+	position: fixed;
+	border-bottom: 1px solid #b1b1b1;
+	line-height: 60px;
+	width: 100%;
+	transition: background-color 0.5s ease;
+}
+nav.putih{
+	background-color: #fff;
+}
+nav .logo{
+	float: left;
+	position: relative;
+	line-height: 55px;
+	text-align: center;
+}
+nav .logo img{
+	vertical-align: middle;
+	width: 120px;
+}
+nav .menu{
+	float: right;
+	height: 60px;
+	max-width: 600px;
+}
+nav .menu ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+nav .menu ul li{
+	list-style-type: none;
+	float: left;
+	line-height: 60px;
+}
+nav ul li a{
+	color: #fff;
+	text-align: center;
+	padding: 0px 16px 0px 16px;
+	text-decoration: none;
+	transition: color .5s, transform .5s;
+	font-weight: 400;
+}
+nav ul li a:hover{
+	color: #00bcd4;
+}
+
+/* Pengaturan Header */
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(IMG/background.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+header .intro{
+	z-index: 100;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	top: 50%;
+}
+header .intro h3{
+	z-index: -100;
+	font-size: 50px;
+	text-shadow: -4px 4px 4px #000;
+	margin: 0;
+	padding: 0;
+}
+.color{
+	color: blue;
+	font-size: 50px;
+}
+/* Button Stastika */
+.tombol{
+	background-color: blue;
+	height: 40px;
+	line-height: 42px;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0px 20px 0px 20px;
+	font-size: 15px;
+	border-radius: 4px;
+}
+.tombol:hover{
+	background-color: #fff;
+	color: #000;
+}
+.tombol-menu{
+	position: absolute;
+	top: 1.7rem;
+	right: 1rem;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 20px;
+}
+.tombol-menu .garis{
+	height: 3px;
+	background-color: #fff;
+}
+/* Halaman About */
+section{
+	padding: 50px 0px 50px 0px;
+}
+section h3{
+	font-size: 30px;
+}
+section h3:after{
+	content: "";
+	border-bottom: 5px solid blue;
+	width: 52px;
+	display: block;
+	margin: 20px auto;
+}
+#aboutus{
+	text-align: center;
+}
+section p.ringkasan{
+	font-style: italic;
+	font-size: 18px;
+	color: #ababab;
+}
+section .konten-isi P{
+	font-style: normal;
+}
+/* Bagian Nav */
+nav.putih{
+	background-color: #fff;
+}
+nav.putih .tombol-menu .garis{
+	background-color: #333;
+}
+nav.putih ul li a{
+	color: #333;
+}
+nav .logo img.hitam{
+	display: none;
+}
+/* Bagian Destination Wisata */
+.destinasi h6{
+	font-family: 'Times New Roman', sans-serif;
+	font-size: 20px;
+}
+.destinasi img{
+	float: center;
+	width: 70%;
+}
+.destinasi div{
+
+}
+/* CSS Bagian Gallery */
+section#gallery{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	overflow: hidden;
+	padding: 10px 0px 10px 0px;
+}
+section#gallery div{
+	padding: 10px;
+}
+section#gallery div img{
+	height: 100px;
+	border-radius: 5px;
+}
+section#gallery div img:hover{
+	transition: all 0.2s ease-in-out;
+	transform: scale(1.1);
+}
+/* Advertismen Agama */
+section.advertismen img{
+	width: 90%;
+	height: 50%;
+	border: 1px solid #000;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	font-style: italic;
+
+}
+section.advertismen p{
+	text-align: center;
+	font-style: italic;
+}
+/* CSS Halaman Footer */
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+	padding: 70px 0;
+}
+.footer-col{
+	width: 20%;
+	padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links img{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin: 0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links img:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.footer-bottom{
+	width: 100%;
+	padding: 20px 0;
+	text-align: center;
+	border-top: 1px solid #666;
+	margin-top: 40px;
+	padding-top: 40px;
+}
+.footer-bottom p{
+	color: #ffffff;
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+.footer-bottom span{
+	text-transform: uppercase;
+	opacity: .4;
+	font-weight: 200;
+}
+/* CSS Watch Swimming Pool */
+.tour{
+	margin-bottom: 2rem;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("IMG/bg.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no repeat;
+}
+.tour_container{
+	padding-bottom: 0;
+}
+.tour_container video{
+	height: 100%;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%,-50%);
+}
+.tour_container h4{
+	font-family: 'Times New Roman', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+}
+.video_container{
+	width: 90%;
+	max-width: 500px;
+	margin-inline: auto;
+	height: 300px;
+	overflow: hidden;
+	background-color: text-light;
+	transform: translateY(2rem);
+	border: 1px solid white;
+	border-radius: 10px;
+}
+/*nav .menu .dropdown{
+	display: none;
+}
+nav ul li:hover .dropdown{
+	display: block;
+	background-color: #FFF;
+	position: absolute;
+	margin-top: -0px;
+	padding: 2px;
+	border-radius: 10px;
+	width: 150px;
+}
+nav .menu .dropdown a{
+	color: #000;
+}
+.menu i{
+	color: #000;
+}*/
+
+@media screen and (max-width: 991.98px) {
+	.layar-dalam{
+		width: 90%;
+	}
+	nav .menu ul{
+		display: none;
+		margin-top: 50px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	nav .menu ul li{
+		width: 100%;
+		border-bottom: 1px solid #ccc;
+		background-color: #fff;
+		line-height: 40px;
+	}
+	nav .menu ul li a{
+		color: #333;
+	}
+	.tombol-menu{
+		display: flex;
+	}
+	.blog .area{
+		display: block;
+	}
+	.blog div.area div{
+		width: 100%;
+	}
+	.blog .area .gambar{
+		border-radius: 5px 5px 0px 0px;
+		height: 200px;
+	}
+	.destinasi{
+		display: block;
+	}
+	.destinasi div{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.tour h4{
+		line-height: 40px;
+	}
+	#blog{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#blog h4{
+		margin: -40px;
+		margin-bottom: 10px;
+		inline-size: 150px;
+		line-height: 20px;
+	}
+	.footer-col{
+		width: 50%;
+		margin-bottom: 30px;
+	}
+	.footer-col{
+		width: 100%;
+	}
+}
